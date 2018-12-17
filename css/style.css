@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out 0s;
+}
+/* .logo{
+width: 200px;
+height: 200px;
+margin : 0 0 0 100px; 
+} */
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+background: white;
+margin: 0;
+}
+.btn{
+    padding:10px;
+    border-radius:20px;
+}
+header{
+    background: linear-gradient(
+        rgba(242, 96, 121, 0.9), 
+        rgba(242, 96, 121, 0.9)
+      ),url('../img/photos/food-fruit-grapes-197907.jpg') no-repeat left fixed;
+    background-size: cover;
+    color:white;
+    padding: 5px 5px 15px 5px;
+    text-align: center;
+
+}
+.pitch{
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 50px 0 30px 0;
+    
+}
+.discover{
+    border: 1px solid white;
+    background-color: rgba(255, 192, 203, 0.3);
+    color : white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    font-size: 18px;
+}
+.discover:hover{
+   color:black;
+   border-color: black;
+}
+nav{
+    margin-top: 50px;
+}
+ul{
+    list-style: none;
+    display: flex;
+
+    padding: 0;
+}
+ li{
+    margin: 0 auto;
+}
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+
+}
+nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 18px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out 0s;
+    transform: scaleX(0);
+
+
+}
+nav a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    font-weight: bold;
+}
+.titre{
+    border: 2px solid #62c97d;
+    margin: -25px 20px 4px 2px;
+    padding: 10px;
+}
+.titre p{
+    font-family: "Nixie One", cursive;
+}
+
+.container{
+    margin: 10px;
+}
+.right{
+    text-align: right;
+}
+article{
+    margin-bottom: 30px;
+}
+article img{
+    width: 100%;
+}
+article h3{
+    position: absolute;
+    border: 2px solid #F26079;
+    margin: -25px 20px 4px 2px;
+    padding: 15px;
+    color: black;
+}
+footer{
+    background: #F26079;
+}
