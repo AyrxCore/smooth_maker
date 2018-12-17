@@ -12,11 +12,16 @@ html{
 }
 body{
 background: white;
-margin: 0;
+margin: 0 auto;
+justify-content: center;
 }
 .btn{
     padding:10px;
     border-radius:20px;
+    border: 1px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 25px;
 }
 header{
     background: linear-gradient(
@@ -37,29 +42,28 @@ header{
     
 }
 .discover{
-    border: 1px solid white;
+    border-color: white;
     background-color: rgba(255, 192, 203, 0.3);
     color : white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px 25px;
-    font-size: 18px;
+    font-size: 12px;
+
 }
 .discover:hover{
    color:black;
    border-color: black;
 }
 nav{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 ul{
     list-style: none;
     display: flex;
-
+    flex-direction: column;
     padding: 0;
 }
  li{
     margin: 0 auto;
+    line-height: 45px;
 }
 nav a {
     font-weight: 600;
@@ -67,15 +71,19 @@ nav a {
     position: relative;
     text-decoration: none;
     color: white;
-    font-size: 13px;
+    font-size: 18px;
 
+}
+nav a:hover{
+    text-decoration:none;
+    color:white;
 }
 nav a:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
-    top: 18px;
+    top: 22px;
     left: 0;
     background-color: white;
     visibility: hidden;
@@ -85,6 +93,7 @@ nav a:before {
 
 }
 nav a:hover:before {
+
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -92,21 +101,30 @@ nav a:hover:before {
 }
 .titre{
     border: 2px solid #62c97d;
-    margin: -25px 20px 4px 2px;
+    margin: -30px 20px 4px 2px;
     padding: 10px;
+    text-align: center;
 }
-.titre p{
+.titre h1{
+    margin: 0;
+    padding-top:1.5rem;
+}
+.titre small{
     font-family: "Nixie One", cursive;
+
 }
 
 .container{
-    margin: 10px;
+    margin: 0 auto;
 }
 .right{
     text-align: right;
 }
+#produits{
+    margin-bottom: 35px;
+}
 article{
-    margin-bottom: 30px;
+    margin-bottom: 55px;
 }
 article img{
     width: 100%;
@@ -114,10 +132,40 @@ article img{
 article h3{
     position: absolute;
     border: 2px solid #F26079;
-    margin: -25px 20px 4px 2px;
     padding: 15px;
     color: black;
 }
+article:nth-child(even) h3{
+    margin: -15px 20px 4px 100px;
+}
+article:nth-child(odd) h3{
+    margin: -15px 20px 4px 10px;
+}
+
+.localisation{
+    text-align:center; 
+}
+.recipe{
+    border-color:#F26079;
+    color:#F26079;
+    font-size: 14px;
+}
+.recipe:hover{
+    background:#F26079;
+    color:white;
+}
 footer{
+    padding: 25px;
     background: #F26079;
+    text-align: center;
+    color:white;
+}
+footer p {
+    font-weight: 800;
+}
+footer span{
+    font-size: 24px;
+}
+footer img{
+    width: 50px;
 }
