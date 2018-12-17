@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Lun 17 Décembre 2018 à 13:46
+-- Généré le :  Lun 17 Décembre 2018 à 13:56
 -- Version du serveur :  5.7.24-0ubuntu0.16.04.1
 -- Version de PHP :  7.0.32-0ubuntu0.16.04.1
 
@@ -153,6 +153,17 @@ ALTER TABLE `recipe`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- Contraintes pour les tables exportées
+--
+
+--
+-- Contraintes pour la table `favorite`
+--
+ALTER TABLE `favorite`
+  ADD CONSTRAINT `fk_recipe` FOREIGN KEY (`id`) REFERENCES `recipe` (`id`),
+  ADD CONSTRAINT `fk_user` FOREIGN KEY (`id`) REFERENCES `user` (`id`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
