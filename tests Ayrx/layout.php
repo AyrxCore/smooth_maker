@@ -11,19 +11,30 @@
     <link rel="stylesheet" type="text/css" media="screen" href="testStyle.css" />
 </head>
 
-<body>
-    <header class="d-flex flex-row justify-content-between align-items-center">
+<body id="layout">
+    <header>
         <a href="index.php"><img src="../img/logo/logo.png" alt="Logo SmoothMaker"></a>
-        <nav class="nav">
+        <nav class="nav navDesktop">
             <a class="nav-link text-dark font-weight-bold text-uppercase mx-4" href="#">Accueil</a>
             <a class="nav-link text-dark font-weight-bold text-uppercase mx-4" href="#">Smoothies</a>
             <a class="nav-link text-dark font-weight-bold text-uppercase mx-4" href="#">Recettes</a>
-            <a class="nav-link text-dark font-weight-bold text-uppercase ml-4" href="#">Le bar</a>
+            <a class="nav-link text-dark font-weight-bold text-uppercase mx-4" href="#">Le bar</a>
         </nav>
+        <!-- Menu mobile caché -->
+        <section>
+            <p>Menu</p>
+            <nav class="nav navMobile">
+                <a class="nav-link text-dark text-uppercase mx-4" href="#">Accueil</a>
+                <a class="nav-link text-dark text-uppercase mx-4" href="#">Smoothies</a>
+                <a class="nav-link text-dark text-uppercase mx-4" href="#">Recettes</a>
+                <a class="nav-link text-dark text-uppercase ml-4" href="#">Le bar</a>
+            </nav>
+        </section>
+        <!--  -->
     </header>
-    
-    <main>
 
+    <main>
+        <?php include "recipe.phtml" ?>
     </main>
     
     <footer>

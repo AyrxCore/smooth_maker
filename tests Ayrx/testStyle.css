@@ -16,15 +16,33 @@ body
 }
 
 /* HEADER */
-header
+#layout header
 {
     font-size: 2.3rem;
     margin: 3rem 0;
-    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-header a img
+#layout header section
+{
+    display: none;
+    cursor: pointer;
+}
+#layout header a img
 {
     width: 20rem;
+}
+#layout header .navMobile
+{
+    display: none;
+    background: red;
+    position: absolute;
+    left: 4rem;
+    top: 23rem;
+    width: 85%;
+    display: flex;
+    justify-content: center;
 }
 
 /* RECIPE */
@@ -53,22 +71,38 @@ header a img
 }
 
 /* FOOTER */
-footer
+#layout footer
 {
     padding: 25px;
     background: #F26079;
     text-align: center;
     color:white;
 }
-footer p
+#layout footer p
 {
     font-weight: 800;
 }
-footer p:nth-child(2)
+#layout footer p:nth-child(2)
 {
     font-size: 2.4rem;
 }
-footer img
+#layout footer img
 {
     width: 50px;
+}
+
+@media screen and (max-width: 640px)
+{
+    #layout header .navDesktop
+    {
+        display: none;
+    }
+    #layout header section
+    {
+        display: block;
+    }
+    #layout header section p
+    {
+        display: block;
+    }
 }
