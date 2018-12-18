@@ -108,30 +108,6 @@
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
     <footer>
         <p>Partage ton smoothie sur les réseaux sociaux avec </p>

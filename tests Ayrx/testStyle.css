@@ -1,0 +1,108 @@
+*
+{
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out 0s;
+}
+html
+{
+	font-size: 62.5%;
+}
+body
+{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 85%;
+}
+
+/* HEADER */
+#layout header
+{
+    font-size: 2.3rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#layout header section
+{
+    display: none;
+    cursor: pointer;
+}
+#layout header a img
+{
+    width: 20rem;
+}
+#layout header .navMobile
+{
+    display: none;
+    background: red;
+    position: absolute;
+    left: 4rem;
+    top: 23rem;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+/* RECIPE */
+#recipe img
+{
+    width: 100%;
+    height: auto;
+}
+#recipe h1
+{
+    border: 2px solid #62c97d;
+    margin: -30px 20px 4px 2px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    margin: 0;
+    padding-top:1.5rem;
+}
+#recipe article
+{
+    width: 30%;
+}
+#recipe article + article
+{
+    width: 60%;
+}
+
+/* FOOTER */
+#layout footer
+{
+    padding: 25px;
+    background: #F26079;
+    text-align: center;
+    color:white;
+}
+#layout footer p
+{
+    font-weight: 800;
+}
+#layout footer p:nth-child(2)
+{
+    font-size: 2.4rem;
+}
+#layout footer img
+{
+    width: 50px;
+}
+
+@media screen and (max-width: 640px)
+{
+    #layout header .navDesktop
+    {
+        display: none;
+    }
+    #layout header section
+    {
+        display: block;
+    }
+    #layout header section p
+    {
+        display: block;
+    }
+}

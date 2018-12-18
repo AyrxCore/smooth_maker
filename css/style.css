@@ -2,12 +2,10 @@
     box-sizing: border-box;
     transition: all 0.3s ease-in-out 0s;
 }
-
 body{
 background: white;
 margin: 0 auto;
 font-family: 'Montserrat', sans-serif;
-
 }
 main{
     width: 95%;
@@ -48,7 +46,6 @@ header a img{
     background-color: rgba(255, 192, 203, 0.3);
     color : white;
     font-size: 12px;
-
 }
 .discover:hover{
    color:black;
@@ -74,7 +71,6 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-
 }
 nav a:hover{
     text-decoration:none;
@@ -91,8 +87,6 @@ nav a:before {
     visibility: hidden;
     transition: all 0.2s ease-in-out 0s;
     transform: scaleX(0);
-
-
 }
 nav a:hover:before {
 
@@ -118,7 +112,6 @@ nav a:hover:before {
     text-align: center;
 
 }
-
 .container{
     margin: 0 auto;
 }
@@ -152,7 +145,6 @@ article:nth-child(even) h3{
 article:nth-child(odd) h3{
     margin: -15px 0 4px 1rem;
 }
-
 .localisation{
     text-align:center; 
 }
@@ -205,7 +197,7 @@ footer img{
     #produit article {
         margin: 0 auto;
     }
-
+}
 @media screen and (max-width: 640px)
 {
     #layout header .navDesktop
