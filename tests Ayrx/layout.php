@@ -34,10 +34,8 @@
         <!--  -->
     </header>
 
-    <main>
-        <?php include "recipe.phtml" ?>
-    </main>
-    
+    <?php include "../connexion.phtml" ?>
+ 
     <footer>
         <p>Partage ton smoothie sur les réseaux sociaux avec </p>
         <p>#Smooth Maker</p>

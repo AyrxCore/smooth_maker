@@ -1,31 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link rel="stylesheet" href="style.css"> -->
-    <title>Connexion</title>
-</head>
-<body>
-
-<p>En vous connectant, vous pourrez accéder à votre liste de recettes favotites et en ajouter de nouvelles à votre liste. Si vous n'avez pas de compte, vous pouvez en créer un gratuitement.</p>
-<button><a href="formulaire.phtml">Créer un compte</a></button>    
-
-<form class="form">
-        <legend></legend>
-        <div class="form-group">
-            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Adresse email">
-        </div>
-        <div class="form-group">
-            <input type="password" name="mdp" class="form-control" id="password" placeholder="Mot de passe">
-        </div>
-        <button type="submit" class="btn btn-primary btn1">Se connecter</button>
+<main id="connexion">
+    <div class="entete"></div>
+    <h1>SE CONNECTER</h1>
+    <p>En vous connectant, vous pourrez accéder à votre liste de recettes favorites et en ajouter de nouvelles à votre liste. Si vous n'avez pas de compte, vous pouvez en créer un gratuitement.</p>
+    <a href="formulaire.phtml">Créer un compte</a>  
+    <form>
+        <input type="email" name="email" id="email" aria-describedby="emailHelp" placeholder="Adresse email">
+        <input type="password" name="mdp" id="password" placeholder="Mot de passe">
+        <input type="submit" value="Connexion">
     </form>
-
     <div class="test"></div>
-
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
-<script src="main.js"></script>
-</html>
+</main>
