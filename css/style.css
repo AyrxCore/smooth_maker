@@ -2,17 +2,15 @@
     box-sizing: border-box;
     transition: all 0.3s ease-in-out 0s;
 }
-/* .logo{
-width: 200px;
-height: 200px;
-margin : 0 0 0 100px; 
-} */
 
 body{
 background: white;
 margin: 0 auto;
 font-family: 'Montserrat', sans-serif;
 
+}
+main{
+    width: 95%;
 }
 .btn{
     padding:10px;
@@ -29,15 +27,20 @@ header{
       ),url('../img/photos/food-fruit-grapes-197907.jpg') no-repeat left fixed;
     background-size: cover;
     color:white;
-    padding: 5px 5px 15px 5px;
+    padding: 5px 5px 35px 5px;
     text-align: center;
-
+   
 }
+header a img{
+    width: 20rem;
+}
+
+
 .pitch{
     font-weight: 800;
     font-size: 24px;
     text-transform: uppercase;
-    margin: 50px 0 30px 0;
+    margin: 25px 0 3px 0;
     
 }
 .discover{
@@ -100,9 +103,10 @@ nav a:hover:before {
 }
 .titre{
     border: 2px solid #62c97d;
-    margin: -30px 20px 4px 2px;
-    padding: 10px;
-    text-align: center;
+    margin: -15px 20px 4px 25px;
+    padding: 0 0 10px 20px;
+    width: 80%;
+
 }
 .titre h1{
     font-weight: 800;
@@ -111,6 +115,7 @@ nav a:hover:before {
 }
 .titre small{
     font-family: "Nixie One", cursive;
+    text-align: center;
 
 }
 
@@ -120,11 +125,16 @@ nav a:hover:before {
 .right{
     text-align: right;
 }
-#produits{
-    margin-bottom: 35px;
+.d{
+    text-align: center;
+    border-bottom: 4px solid #62c97d;
+    width: 45%;
+    padding-bottom: 18px;
+    margin: 0 auto;
+
 }
 article{
-    margin-bottom: 55px;
+    margin: 45px 0;
 }
 article img{
     width: 100%;
@@ -136,16 +146,18 @@ article h3{
     color: black;
 }
 article:nth-child(even) h3{
-    margin: -15px 20px 4px 100px;
+    margin: -15px 0 7px 24rem;
+
 }
 article:nth-child(odd) h3{
-    margin: -15px 20px 4px 10px;
+    margin: -15px 0 4px 1rem;
 }
 
 .localisation{
     text-align:center; 
 }
 .recipe{
+    text-align:center; 
     border-color:#F26079;
     color:#F26079;
     font-size: 14px;
@@ -153,6 +165,15 @@ article:nth-child(odd) h3{
 .recipe:hover{
     background:#F26079;
     color:white;
+}
+h2{
+font-weight: 800;
+}
+#diy {
+    text-align: center;
+}
+section{
+    margin-bottom:55px;
 }
 footer{
     padding: 25px;
@@ -168,4 +189,35 @@ footer span{
 }
 footer img{
     width: 50px;
+}
+
+@media screen and (min-width: 720px) {
+    .logo{
+        width:25%;
+        height: 25%;
+    }
+    #produits article h3{
+        margin : 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #produit article {
+        margin: 0 auto;
+    }
+
+@media screen and (max-width: 640px)
+{
+    #layout header .navDesktop
+    {
+        display: none;
+    }
+    #layout header section
+    {
+        display: block;
+    }
+    #layout header section p
+    {
+        display: block;
+    }
 }
