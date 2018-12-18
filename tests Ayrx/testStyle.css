@@ -1,0 +1,74 @@
+*
+{
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out 0s;
+}
+html
+{
+	font-size: 62.5%;
+}
+body
+{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 85%;
+}
+
+/* HEADER */
+header
+{
+    font-size: 2.3rem;
+    margin: 3rem 0;
+    width: 85%;
+}
+header a img
+{
+    width: 20rem;
+}
+
+/* RECIPE */
+#recipe img
+{
+    width: 100%;
+    height: auto;
+}
+#recipe h1
+{
+    border: 2px solid #62c97d;
+    margin: -30px 20px 4px 2px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    margin: 0;
+    padding-top:1.5rem;
+}
+#recipe article
+{
+    width: 30%;
+}
+#recipe article + article
+{
+    width: 60%;
+}
+
+/* FOOTER */
+footer
+{
+    padding: 25px;
+    background: #F26079;
+    text-align: center;
+    color:white;
+}
+footer p
+{
+    font-weight: 800;
+}
+footer p:nth-child(2)
+{
+    font-size: 2.4rem;
+}
+footer img
+{
+    width: 50px;
+}

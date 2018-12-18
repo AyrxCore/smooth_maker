@@ -7,12 +7,10 @@ width: 200px;
 height: 200px;
 margin : 0 0 0 100px; 
 } */
-
 body{
 background: white;
 margin: 0 auto;
 font-family: 'Montserrat', sans-serif;
-
 }
 .btn{
     padding:10px;
@@ -31,21 +29,19 @@ header{
     color:white;
     padding: 5px 5px 15px 5px;
     text-align: center;
-
 }
 .pitch{
     font-weight: 800;
     font-size: 24px;
     text-transform: uppercase;
     margin: 50px 0 30px 0;
-    
+
 }
 .discover{
     border-color: white;
     background-color: rgba(255, 192, 203, 0.3);
     color : white;
     font-size: 12px;
-
 }
 .discover:hover{
    color:black;
@@ -71,7 +67,6 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-
 }
 nav a:hover{
     text-decoration:none;
@@ -88,8 +83,6 @@ nav a:before {
     visibility: hidden;
     transition: all 0.2s ease-in-out 0s;
     transform: scaleX(0);
-
-
 }
 nav a:hover:before {
 
@@ -111,9 +104,7 @@ nav a:hover:before {
 }
 .titre small{
     font-family: "Nixie One", cursive;
-
 }
-
 .container{
     margin: 0 auto;
 }
@@ -141,7 +132,6 @@ article:nth-child(even) h3{
 article:nth-child(odd) h3{
     margin: -15px 20px 4px 10px;
 }
-
 .localisation{
     text-align:center; 
 }
