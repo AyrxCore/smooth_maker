@@ -1,6 +1,12 @@
 "use strict";
 
 $(document).ready(function(){
+    $(".menuMobile").on("click", function()
+    {
+        $(".navMobile").toggle()
+        $(".menuMobile i").toggleClass("fas fa-times")
+        $(".menuMobile i").toggleClass("fas fa-bars")
+    })
 
     $(".form").on('submit',verifInfo);
     function verifInfo(e){
