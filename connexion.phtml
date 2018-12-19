@@ -1,12 +1,12 @@
 <main id="connexion">
     <div class="entete"></div>
     <h1>SE CONNECTER</h1>
-    <p>En vous connectant, vous pourrez accéder à votre liste de recettes favorites et en ajouter de nouvelles à votre liste. Si vous n'avez pas de compte, vous pouvez en créer un gratuitement.</p>
-    <a href="formulaire.phtml">Créer un compte</a>  
-    <form>
-        <input type="email" name="email" id="email" aria-describedby="emailHelp" placeholder="Adresse email">
+    <p>En vous connectant, vous pourrez accéder à votre liste de recettes favorites et en ajouter de nouvelles. Si vous n'avez pas de compte, vous pouvez en créer un gratuitement.</p>
+    <a href="newUser.php">Créer un compte</a>  
+    <form class="connect">
+        <input type="text" name="email" id="email" aria-describedby="emailHelp" placeholder="Adresse email">
         <input type="password" name="mdp" id="password" placeholder="Mot de passe">
-        <input type="submit" value="Connexion">
+        <input type="submit" name="connexion" value="Connexion">
     </form>
-    <div class="test"></div>
+    <div class="failed"></div>
 </main>

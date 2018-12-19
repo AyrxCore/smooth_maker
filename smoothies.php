@@ -10,4 +10,5 @@ $requete = $bdd->prepare("
 $requete->execute();
 $user = $requete->fetchAll();
 
-include "index.phtml";
+$page = "smoothies";
+include "layout.phtml";
