@@ -1,0 +1,596 @@
+/* INDEX.PHP */
+        /*-- header --*/
+.btn{
+    padding:10px;
+    border-radius:20px;
+    border: 1px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 25px;
+}
+header{
+    background: linear-gradient(
+        rgba(242, 96, 121, 0.9), 
+        rgba(242, 96, 121, 0.9)
+      ),url('../img/photos/food-fruit-grapes-197907.jpg') no-repeat left fixed;
+    background-size: cover;
+    color:white;
+    padding: 5px 5px 35px 5px;
+    text-align: center;
+   
+}
+header section
+{
+    display: none;
+    cursor: pointer;
+}
+header .navMobile
+{
+    background:rgba(242, 98, 121, 0.8);
+    position: absolute;
+    left: 7.5%;
+    top: 19.7%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    display: none;
+    line-height: 6rem;
+    color: white;
+}
+
+.pitch{
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 25px 0 3px 0;
+    
+}
+.discover{
+    border-color: white;
+    background-color: rgba(255, 192, 203, 0.3);
+    color : white;
+    font-size: 12px;
+}
+.discover:hover{
+   color:black;
+   border-color: black;
+}
+nav{
+    margin-top: 30px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+ li{
+    margin: 0 auto;
+    line-height: 45px;
+}
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+nav a:hover{
+    text-decoration:none;
+    color:white;
+}
+nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 22px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out 0s;
+    transform: scaleX(0);
+}
+nav a:hover:before {
+
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    font-weight: bold;
+}
+        /*-- main --*/
+.titre{
+    border: 2px solid #62c97d;
+    margin: -30px 20px 4px 25px;
+    padding: 0 0 10px 20px;
+    width: 80%;
+
+}
+.titre h1{
+    font-weight: 800;
+    margin: 0;
+    padding-top:1.5rem;
+}
+.titre small{
+    font-family: "Nixie One", cursive;
+    text-align: center;
+
+}
+
+.container{
+    margin: 0 auto;
+}
+.right{
+    text-align: right;
+}
+.d{
+    text-align: center;
+    border-bottom: 4px solid #62c97d;
+    width: 45%;
+    padding-bottom: 18px;
+    margin: 0 auto;
+
+}
+article{
+    margin: 45px 0;
+}
+article img{
+    width: 100%;
+}
+article h3{
+    position: absolute;
+    border: 2px solid #F26079;
+    padding: 15px;
+    color: black;
+}
+article:nth-child(even) h3{
+    margin: -16px 0 17px 19rem;
+
+}
+article:nth-child(odd) h3{
+    margin: -15px 0 4px 1rem;
+}
+.recipe{
+    text-align:center; 
+    border-color:#F26079;
+    color:#F26079;
+    font-size: 14px;
+}
+.recipe:hover{
+    background:#F26079;
+    color:white;
+}
+#produits h2{
+    text-align: center;
+}
+hr{
+    width: 10%;
+    size: 2;
+    border:2px solid #62c97d;
+}
+h2{
+font-weight: 800;
+}
+#diy {
+    text-align: center;
+}
+section{
+    margin-bottom:55px;
+}
+        /* footer */
+
+footer{
+    padding: 25px;
+    background: #F26079;
+    text-align: center;
+    color:white;
+}
+footer p {
+    font-weight: 800;
+}
+footer span{
+    font-size: 24px;
+}
+footer img{
+    width: 50px;
+}
+
+
+/* FIN DE INDEX.PHP */
+
+/* RECETTES.PHP */
+#recettes{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+#recettes img{
+    width: 100%;
+}
+#recettes .titre{
+    border: solid #F26079 3px;
+    flex: 1;
+    margin: 50px 0 -3rem -2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 250px;
+}
+#recettes h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+}
+#recettes #presentation a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background: #F26079;
+    margin: 2.5rem auto;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2rem;
+    background: #F26079;
+    border: none;
+}
+#recettes #presentation{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#recettes .image{
+    background: url("../img/photos/smooth-min.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    flex: 1;
+}
+#recettes .imageSmoothie{
+    background: url("../img/photos/jus-ananas-orange.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    flex: 1;
+}
+#recettes .para{
+    flex-basis: 100%;
+    margin-top: 6rem;
+}
+#recettes #presentation p{
+    color: gray;
+    padding: 0 5rem;
+    margin: 0;
+    line-height: 1.5rem;
+}
+#recettes #articles article{
+    text-align: center;
+}
+#recettes h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: solid #F26079;
+    padding: 1rem 3rem 0;
+    margin: -1rem 2.5rem 2rem;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+#recettes #articles div{
+    width: 100%;
+    height: 16rem;
+    background-size: cover;
+}
+#recettes #articles img{
+    height: 100%;
+}
+#recettes #articles span{
+    flex-basis: 100%;
+}
+/* FIN DE RECETTES.PHP */
+/*ANTHONY*/
+
+*
+{
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out 0s;
+}
+html
+{
+	font-size: 62.5%;
+}
+body
+{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 85%;
+}
+#presentation img{
+    width: 100%;
+ }
+ #presentation .Grostitre{
+    border: solid #F26079 3px;
+    flex: 1;
+    margin: 50px 0 -3rem -2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    width: 85%;
+}
+ #presentation h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+}
+#presentation{
+    display: flex;
+    flex-wrap: wrap;
+}
+.localisation{
+    text-align:center; 
+}
+ 
+#presentation .image{
+    background: url("img/photos/smooth.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    flex: 1;
+}
+#presentation .para{
+    flex-basis: 100%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+#presentation #presentation p{
+    color: gray;
+    padding: 0 5rem;
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+/* HEADER */
+#layout header
+{
+    font-size: 2.3rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#layout header section
+{
+    display: none;
+    cursor: pointer;
+}
+#layout header a img
+{
+    width: 20rem;
+}
+#layout header .navMobile
+{
+    background:rgba(242, 98, 121, 0.8);
+    position: absolute;
+    left: 7.5%;
+    top: 19.7%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    display: none;
+    line-height: 6rem;
+    color: white;
+    z-index:1;
+}
+
+/* RECIPE */
+#recipe img
+{
+    width: 100%;
+    height: auto;
+}
+#recipe h1
+{
+    border: 2px solid #62c97d;
+    text-align: center;
+    font-weight: 800;
+    width: 60%;
+    padding: 5rem 0 1rem;
+    margin-top: -4rem;
+    position: absolute;
+    left: 21%;
+    font-size: 3.5rem;
+}
+#recipe section
+{
+    margin: 14rem 0 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#recipe section a
+{
+    flex-basis: 100%;
+    margin-bottom: 4rem;
+}
+#recipe .ingredient
+{
+    width: 30%;
+    margin-bottom: 3rem;
+}
+#recipe .ingredient span
+{
+    background: white;
+    padding: 0 1rem;
+    margin-left: 1rem;
+    color: green;
+    text-transform: uppercase;
+}
+#recipe .ingredient div
+{
+    padding: 2rem 2rem 1rem;
+    margin-top: -1.5rem;
+    border: solid 2px green;
+    font-size: 2.5rem;
+}
+#recipe .recipe
+{
+    width: 60%;
+    line-height: 3rem;
+}
+#recipe .ingredient ul
+{   
+    list-style: none;
+}
+#recipe .ingredient li:before, #recipe .recipe li:before
+{
+    content: "- ";
+}
+#recipe .recipe ul
+{
+    list-style: decimal;
+}
+
+/* FOOTER */
+#layout footer
+{
+    padding: 25px;
+    background: #F26079;
+    text-align: center;
+    color:white;
+}
+#layout footer p
+{
+    font-weight: 800;
+}
+#layout footer p:nth-child(2)
+{
+    font-size: 2.4rem;
+}
+#layout footer img
+{
+    width: 50px;
+}/*
+.titre{
+    border: 2px solid #62c97d;
+    margin: -30px 20px 4px 25px;
+    padding: 0 0 10px 20px;
+
+
+}
+.titre h1{
+    font-weight: 800;
+    margin: 0;
+    padding-top:1.5rem;
+}
+.titre small{
+    font-family: "Nixie One", cursive;
+    text-align: center;
+
+} */
+#findUs .text {
+    text-align: center;
+}
+#findUs .titre{
+    border: 2px solid #62c97d;
+    margin: -30px 20px 4px 25px;
+    padding: 10px 0 10px 20px;
+    width: 100%;
+}
+#findUs .titre small{
+    font-size: 16px;
+}
+
+#findUs .titre h2{
+    font-size: 3rem;
+}
+#findUs{
+    padding: 15px;
+}
+#findUs .horaire {
+    border: 2px solid #62c97d;
+    margin: 15px auto;
+    padding: 10px 0 10px 0px;
+    width: 35%;
+}
+.navMobile li{
+    list-style:none;
+}
+.navMobile ul{
+    padding:0;
+}
+.navMobile li:hover{
+    background-color: rgba(178, 62, 79,0.5)
+}
+
+h2{
+    font-weight: 800;
+}
+.frame{
+    display:none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px)
+{
+    #layout header .navDesktop
+    {
+        display: none;
+    }
+    #layout header section
+    {
+        display: block;
+    }
+    #findUs .coord{
+        margin: 0 auto;
+    }
+    #presentation .para{
+        font-size:14px;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    #findUs .titre {
+        width: 87%;
+    }
+    #findUs .text {
+        text-align: left;
+    }
+    .frame{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #produit article {
+        margin: 0 auto;
+    }
+    .logo{
+        width: 250px;
+        height: 250px;
+        margin: 0
+    }
+
+    #produits article h3:nth-child(odd),
+    #produits  article h3:nth-child(even){
+        margin : -15px 0 4px 1rem;
+
+    }
+}
+
+@media screen and (max-width: 780px)
+{
+     header .navDesktop
+    {
+        display: none;
+    }
+     header section
+    {
+        display: block;
+    }
+     header section p
+    {
+        display: block;
+    }
+
+}
