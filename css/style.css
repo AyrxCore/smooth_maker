@@ -29,10 +29,24 @@ header{
     text-align: center;
    
 }
-header a img{
-    width: 20rem;
+header section
+{
+    display: none;
+    cursor: pointer;
 }
-
+header .navMobile
+{
+    background:rgba(242, 98, 121, 0.8);
+    position: absolute;
+    left: 7.5%;
+    top: 19.7%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    display: none;
+    line-height: 6rem;
+    color: white;
+}
 
 .pitch{
     font-weight: 800;
@@ -95,9 +109,10 @@ nav a:hover:before {
     transform: scaleX(1);
     font-weight: bold;
 }
+
 .titre{
     border: 2px solid #62c97d;
-    margin: -15px 20px 4px 25px;
+    margin: -30px 20px 4px 25px;
     padding: 0 0 10px 20px;
     width: 80%;
 
@@ -112,6 +127,7 @@ nav a:hover:before {
     text-align: center;
 
 }
+
 .container{
     margin: 0 auto;
 }
@@ -139,7 +155,7 @@ article h3{
     color: black;
 }
 article:nth-child(even) h3{
-    margin: -15px 0 7px 24rem;
+    margin: -16px 0 17px 19rem;
 
 }
 article:nth-child(odd) h3{
@@ -157,6 +173,14 @@ article:nth-child(odd) h3{
 .recipe:hover{
     background:#F26079;
     color:white;
+}
+#produits h2{
+    text-align: center;
+}
+hr{
+    width: 10%;
+    size: 2;
+    border:2px solid #62c97d;
 }
 h2{
 font-weight: 800;
@@ -183,33 +207,36 @@ footer img{
     width: 50px;
 }
 
-@media screen and (min-width: 720px) {
-    .logo{
-        width:25%;
-        height: 25%;
-    }
-    #produits article h3{
-        margin : 0 auto;
-    }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
     #produit article {
         margin: 0 auto;
     }
+    .logo{
+        width: 250px;
+        height: 250px;
+        margin: 0
+    }
+
+    #produits article h3:nth-child(odd),
+    #produits  article h3:nth-child(even){
+        margin : -15px 0 4px 1rem;
+
+    }
 }
-@media screen and (max-width: 640px)
+
+@media screen and (max-width: 780px)
 {
-    #layout header .navDesktop
+     header .navDesktop
     {
         display: none;
     }
-    #layout header section
+     header section
     {
         display: block;
     }
-    #layout header section p
+     header section p
     {
         display: block;
     }
+
 }

@@ -14,6 +14,47 @@ body
     font-family: 'Montserrat', sans-serif;
     width: 85%;
 }
+#presentation img{
+    width: 100%;
+ }
+ #presentation .titre{
+    border: solid #F26079 3px;
+    flex: 1;
+    margin: 50px 0 -3rem -2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 250px;
+ }
+ #presentation h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+}
+#presentation{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+ 
+ #presentation .image{
+    background: url("img/photos/smooth.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    flex: 1;
+}
+#presentation .para{
+    flex-basis: 100%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+#presentation #presentation p{
+    color: gray;
+    padding: 0 5rem;
+    margin: 0;
+    line-height: 1.5rem;
+}
 
 /* HEADER */
 #layout header
@@ -135,6 +176,26 @@ body
 {
     width: 50px;
 }
+.titre{
+    border: 2px solid #62c97d;
+    margin: -30px 20px 4px 25px;
+    padding: 0 0 10px 20px;
+    width: 80%;
+
+}
+.titre h1{
+    font-weight: 800;
+    margin: 0;
+    padding-top:1.5rem;
+}
+.titre small{
+    font-family: "Nixie One", cursive;
+    text-align: center;
+
+}
+h2{
+    font-weight: 800;
+    }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 700px)
@@ -148,3 +209,4 @@ body
         display: block;
     }
 }
+
