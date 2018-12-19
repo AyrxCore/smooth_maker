@@ -74,6 +74,8 @@ $(document).ready(function(){
 
     $(".fav").on('click', clickFav);
     function clickFav(){
-        $(".fav").attr(src, "img/icons/fullheart.png");
+        var id = $(".fav").data("fav");
+        
+        $(".fav").attr("src", "img/icons/fullheart.png");
     }
 });
