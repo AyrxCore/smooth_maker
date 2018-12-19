@@ -8,7 +8,7 @@ if($_POST)
     $mdp = $_POST["mdp"];
 
     $requete = $bdd->prepare("
-        SELECT id 
+        SELECT id, firstName, lastName, email 
         FROM user 
         WHERE email=? AND password=?
         ");
@@ -21,9 +21,10 @@ if($_POST)
     }else{
         $result = true;
     }
-    echo json_encode(["result" => $result]);
+    echo json_encode(["result" => $result, $user]);
 }
-else{
+else
+{
     $page = "connexion";
     include "layout.phtml";
 }
