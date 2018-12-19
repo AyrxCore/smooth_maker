@@ -71,4 +71,9 @@ $(document).ready(function(){
             $(".test").html('<div class="alert alert-success" role="alert">Votre message a été envoyé<br><a href="liste.html">Afficher la liste des membres</a></div>');
         }
     }
+
+    $(".fav").on('click', clickFav);
+    function clickFav(){
+        $(".fav").attr(src, "img/icons/fullheart.png");
+    }
 });

@@ -8,23 +8,23 @@
     text-transform: uppercase;
     padding: 5px 25px;
 }
-header{
+#accueil header{
     background: linear-gradient(
         rgba(242, 96, 121, 0.9), 
         rgba(242, 96, 121, 0.9)
-      ),url('../../img/photos/food-fruit-grapes-197907.jpg') no-repeat left fixed;
+      ),url('../img/photos/food-fruit-grapes-197907.jpg') no-repeat left fixed;
     background-size: cover;
     color:white;
     padding: 5px 5px 35px 5px;
     text-align: center;
    
 }
-header section
+#accueil header section
 {
     display: none;
     cursor: pointer;
 }
-header .navMobile
+#accueil header .navMobile
 {
     background:rgba(242, 98, 121, 0.8);
     position: absolute;
@@ -38,37 +38,37 @@ header .navMobile
     color: white;
 }
 
-.pitch{
+#accueil .pitch{
     font-weight: 800;
     font-size: 24px;
     text-transform: uppercase;
     margin: 25px 0 3px 0;
     
 }
-.discover{
+#accueil .discover{
     border-color: white;
     background-color: rgba(255, 192, 203, 0.3);
     color : white;
     font-size: 12px;
 }
-.discover:hover{
+#accueil .discover:hover{
    color:black;
    border-color: black;
 }
-nav{
+#accueil nav{
     margin-top: 30px;
 }
-ul{
+#accueil ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     padding: 0;
 }
- li{
+#accueil li{
     margin: 0 auto;
     line-height: 45px;
 }
-nav a {
+#accueil nav a {
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
@@ -76,11 +76,11 @@ nav a {
     color: white;
     font-size: 18px;
 }
-nav a:hover{
+#accueil nav a:hover{
     text-decoration:none;
     color:white;
 }
-nav a:before {
+#accueil nav a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -92,7 +92,7 @@ nav a:before {
     transition: all 0.2s ease-in-out 0s;
     transform: scaleX(0);
 }
-nav a:hover:before {
+#accueil nav a:hover:before {
 
     visibility: visible;
     -webkit-transform: scaleX(1);
@@ -280,9 +280,13 @@ footer img{
     width: 100%;
     height: 16rem;
     background-size: cover;
+    position: relative;
 }
-#recettes #articles img{
-    height: 100%;
+#recettes #articles .fav{
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 #recettes #articles span{
     flex-basis: 100%;

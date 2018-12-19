@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Nixie+One" rel="stylesheet">
-    <link rel="stylesheet" href="css/str.css">
+    <link rel="stylesheet" href="css/swag.css">
     <title>Recettes</title>
 </head>
 <body>
@@ -30,7 +30,9 @@
         <?php foreach($recipe as $value): ?>
         <article class="col-sm-12 col-md-6 col-xl-4">
         <a href="recipe.php?id=<?= $value['id'] ?>">
-            <div style="background-image:url(<?= $value['imgSrcRecipe'] ?>)"></div>
+            <div style="background-image:url(<?= $value['imgSrcRecipe'] ?>)">
+                <img class="fav" src="img/icons/emptyheart.png" alt="heart">
+            </div>
             <h2><span><?= $value["recipeName"] ?></span></h2>
             </a>
         </article>
