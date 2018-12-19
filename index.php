@@ -14,26 +14,32 @@
 </head>
 
 <body>
-<header>
-        <a href="index.php"><img src="img/logo/logoblanc.svg" alt="Logo SmoothMaker"></a>
-        <nav class="nav navDesktop">
+<header class="d-flex flex-row">
+        <div class="d-flex">
+        <a href="index.php"><img class='logo ml-auto p-2' src="img/logo/logoblanc.svg" alt="Logo SmoothMaker"></a>
+         <nav class="nav navDesktop  col-md-6 col-lg-8 p-2">
             <a class="nav-link text-dark font-weight-bold text-uppercase mx-4" href="#">Accueil</a>
             <a class="nav-link text-dark font-weight-bold text-uppercase mx-4" href="#">Smoothies</a>
             <a class="nav-link text-dark font-weight-bold text-uppercase mx-4" href="#">Recettes</a>
             <a class="nav-link text-dark font-weight-bold text-uppercase mx-4" href="#">Le bar</a>
         </nav>
+
         <!-- Menu mobile caché -->
         <section>
-            <p>Menu</p>
+            <p class="menuMobile">Menu</p>
             <nav class="nav navMobile">
                 <a class="nav-link text-dark text-uppercase mx-4" href="#">Accueil</a>
                 <a class="nav-link text-dark text-uppercase mx-4" href="#">Smoothies</a>
                 <a class="nav-link text-dark text-uppercase mx-4" href="#">Recettes</a>
                 <a class="nav-link text-dark text-uppercase ml-4" href="#">Le bar</a>
             </nav>
+            </div>
         </section>
-    <p class="pitch">Fabriquant de smoothies artisanal</p>
-    <a class="btn discover" href="#">Decouvrir</a>    
+        <div>
+        <p class="pitch">Fabriquant de smoothies artisanal</p>
+        <a class="btn discover" href="#">Decouvrir</a>    
+        </div>
+    
 </header>
     <main>
         <!-- Presentation -->
@@ -65,9 +71,9 @@
         </section>
         <!-- Nos Smoothies -->
         <section id="produits" >
-            <div class="d">
+
             <h2>Nos Smoothies</h2>
-            </div>
+            <hr>
 
 
         <div  class="form-row">
@@ -120,7 +126,9 @@
     </footer>
 
 </body>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+<script src="main.js"></script>
 </html> 
