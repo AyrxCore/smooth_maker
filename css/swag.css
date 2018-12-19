@@ -12,7 +12,7 @@ header{
     background: linear-gradient(
         rgba(242, 96, 121, 0.9), 
         rgba(242, 96, 121, 0.9)
-      ),url('../img/photos/food-fruit-grapes-197907.jpg') no-repeat left fixed;
+      ),url('../../img/photos/food-fruit-grapes-197907.jpg') no-repeat left fixed;
     background-size: cover;
     color:white;
     padding: 5px 5px 35px 5px;
@@ -238,14 +238,14 @@ footer img{
     text-align: center;
 }
 #recettes .image{
-    background: url("../img/photos/smooth-min.jpg");
+    background: url("../../img/photos/smooth-min.jpg");
     background-size: cover;
     background-position: center center;
     height: 250px;
     flex: 1;
 }
 #recettes .imageSmoothie{
-    background: url("../img/photos/jus-ananas-orange.jpg");
+    background: url("../../img/photos/jus-ananas-orange.jpg");
     background-size: cover;
     background-position: center center;
     height: 250px;
@@ -333,7 +333,7 @@ body
 }
  
 #presentation .image{
-    background: url("img/photos/smooth.jpg");
+    background: url("../img/photos/smooth.jpg");
     background-size: cover;
     background-position: center center;
     height: 250px;
