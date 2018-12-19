@@ -1,33 +1,16 @@
 <main id="recipe">
-    <div><img src="../img/photos/jus-ananas-orange.jpg" alt="Smoothie"></div>
-    <h1 class="text-uppercase">Orange Gourmandise</h1>
+    <div><img src='<?= $recipe["imgSrcRecipe"] ?>' alt="Smoothie"></div>
+    <h1 class="text-uppercase"><?= $recipe["recipeName"] ?></h1>
     <section>  
     <a class="btn recipe" href="#"><i class="fas fa-heart"></i> Ajouter cette recette en favoris</a>
         <article class="ingredient col-12 col-lg-4">
             <h3><span>INGREDIENTS</span></h3>
             <div>
-                <p>Pour 2 personnes :</p>
-                <ul>
-                    <li>2 bananes</li>
-                    <li>1 citron</li>
-                    <li>1 bobsleigh</li>
-                    <li>1 club de golf</li>
-                    <li>1 pincée de sel</li>
-                </ul>
+                <?= $recipe["ingredientRecipe"] ?>
             </div>
         </article>
         <article class="recipe col-12 col-lg-8">
-            <p>1Proin auctor efficitur sem quis pharetra. Sed massa nibh, condimentum imperdiet elit a, vestibulum accumsan nisi. Quisque quis magna sit amet neque eleifend porttitor. Vestibulum dignissim nisl nisl, volutpat hendrerit libero vulputate ut. Nullam metus est, gravida vel mauris at, laoreet feugiat metus.</p>
-            <p><strong>Etapes :</strong></p>
-            <ul>
-                <li>Nettoyer les fruits</li>
-                <li>Éplucher les fruits</li>
-                <li>Couper les fruits</li>
-                <li>S'il y a des pépins, retirez-les</li>
-                <li>Versez les ingrédients dans un grand récipient</li>
-                <li>Servir frais</li>
-            </ul>
-            <p>Proin fringilla venenatis ligula. Nulla dictum elit turpis, in gravida ligula lacinia non. Phasellus auctor sollicitudin neque in tincidunt. Donec scelerisque augue sed facilisis suscipit. Sed maximus convallis leo quis accumsan. Duis at arcu quis purus aliquet ultrices. Fusce nisi eros, hendrerit quis lacinia et, lacinia eget libero. In vehicula, orci sed luctus cursus, eros nulla tempor lorem, a imperdiet dui ex non est. Etiam eu bibendum lectus. Cras sagittis bibendum nulla, vitae egestas dui dapibus sollicitudin. Donec gravida eleifend efficitur.</p>
+            <?= $recipe["descriptionRecipe"] ?>
         </article>
     </section>
 </main>    

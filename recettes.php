@@ -8,7 +8,7 @@ $requete = $bdd->prepare("
      ");
 
 $requete->execute();
-$user = $requete->fetchAll();
+$recipe = $requete->fetchAll();
 
 $page = "recettes";
 include "layout.phtml";
