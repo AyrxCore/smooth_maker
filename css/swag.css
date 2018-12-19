@@ -535,24 +535,7 @@ body
 #layout footer img
 {
     width: 50px;
-}/*
-.titre{
-    border: 2px solid #62c97d;
-    margin: -30px 20px 4px 25px;
-    padding: 0 0 10px 20px;
-
-
 }
-.titre h1{
-    font-weight: 800;
-    margin: 0;
-    padding-top:1.5rem;
-}
-.titre small{
-    font-family: "Nixie One", cursive;
-    text-align: center;
-
-} */
 #findUs .text {
     text-align: center;
 }
@@ -596,23 +579,6 @@ h2{
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 700px)
-{
-    #layout header .navDesktop
-    {
-        display: none;
-    }
-    #layout header section
-    {
-        display: block;
-    }
-    #findUs .coord{
-        margin: 0 auto;
-    }
-    #presentation .para{
-        font-size:14px;
-    }
-}
 
 @media screen and (min-width: 768px)
 {
@@ -642,7 +608,7 @@ h2{
     }
 }
 
-@media screen and (max-width: 780px)
+@media screen and (max-width: 768px)
 {
      header .navDesktop
     {
@@ -657,4 +623,18 @@ h2{
         display: block;
     }
 
+    #layout header .navDesktop
+    {
+        display: none;
+    }
+    #layout header section
+    {
+        display: block;
+    }
+    #findUs .coord{
+        margin: 0 auto;
+    }
+    #presentation .para{
+        font-size:14px;
+    }
 }
