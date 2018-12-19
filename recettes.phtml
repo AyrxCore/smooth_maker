@@ -23,40 +23,16 @@
             <p>Des recettes simples, à réaliser chez vous. Petits-déjeuners, gôuters, nos recettes originales raviront les plus petits comme les plus grands.</p>
             <p>Nos recettes sont faites avec des fruits bio, ce n'est pas indispensable mais nous vous le recommandons. IL est également préférable d'utiliser des fruits de saison.</p>
         </div>
-        <a href=""><i class="far fa-heart"></i> Vos recettes favorites</a>
+        <a href="mesRecettes.php"><i class="far fa-heart"></i> Vos recettes favorites</a>
     </section>
 
     <section id="articles" class="row">
+        <?php foreach($user as $value): ?>
         <article class="col-sm-12 col-md-6 col-xl-4">
-            <div style="background-image:url(img/photos/jus-ananas-orange.jpg)">
-            </div>
-                <h2><span>Orange gourmandise</span></h2>
+            <div style="background-image:url(<?= $value['imgSrcRecipe'] ?>)"></div>
+            <h2><span><?= $value["recipeName"] ?></span></h2>
         </article>
-        <article class="col-sm-12 col-md-6 col-xl-4">
-            <div style="background-image:url(img/photos/smoothie-detox-2.jpg)">
-            </div>
-            <h2><span>Pink pleasure</span></h2>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4">
-            <div style="background-image:url(img/photos/smoothie-detox.jpg)">
-            </div>
-            <h2><span>Green Oxydant</span></h2>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4">
-            <div style="background-image:url(img/photos/batido-detox-de-espinacas-kiwi-y-naranja.jpg)">
-            </div>
-            <h2><span>Smoothie détox</span></h2>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4">
-            <div style="background-image:url(img/photos/Recette_CANDIA_Smoothie_exotique.jpg)">
-            </div>
-            <h2><span>Yellow Banana Mango</span></h2>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4">
-            <div style="background-image:url(img/photos/watermelon_smoothie.jpg)">
-            </div>
-            <h2><span>Watermelon detox</span></h2>
-        </article>
+        <?php endforeach; ?>
     </section>
 </main>
 

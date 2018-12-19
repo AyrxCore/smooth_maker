@@ -165,7 +165,7 @@ body
 {
     width: 100%;
     padding: 16rem 0;
-    background: url("../img/photos/detox cure smoothie.jpg");
+    background: url("img/photos/detox cure smoothie.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -192,14 +192,14 @@ body
     margin: 7rem 0 3rem;
     background: #FCFCFC;
 }
-#connexion form input[type="email"], #connexion form input[type="password"]
+#connexion form input[type="password"], #connexion form input[type="text"]
 {
     border: solid 1px rgb(242, 98, 121);
     border-radius: 15rem;
     height: 4rem;
     width: 70%;
 }
-#connexion form input[type="email"]::placeholder, #connexion form input[type="password"]::placeholder
+#connexion form input[type="password"]::placeholder, #connexion form input[type="text"]::placeholder
 {
     color: rgb(242, 98, 121);
 }

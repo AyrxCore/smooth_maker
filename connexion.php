@@ -2,25 +2,29 @@
 
 include "bdd.php";
 
-$email = $_POST["email"];
-$mdp = $_POST["mdp"];
+if($_POST)
+{
+    $email = $_POST["email"];
+    $mdp = $_POST["mdp"];
 
-$requete = $bdd->prepare("
-     SELECT id FROM user WHERE email=? AND password=?
-     ");
+    $requete = $bdd->prepare("
+        SELECT id 
+        FROM user 
+        WHERE email=? AND password=?
+        ");
 
-$requete->execute([$email, $mdp]);
-$user = $requete->fetch();
+    $requete->execute([$email, $mdp]);
+    $user = $requete->fetch();
 
-//var_dump($user);
-
-
-if(empty($user)){
-     $message = "Utilisateur inconnu";
-     $result = false;
-}else{
-    $message = "Connexion réussie";
-    $result = true;
+    if(empty($user)){
+        $result = false;
+    }else{
+        $result = true;
+    }
+    echo json_encode(["result" => $result]);
+}
+else{
+    $page = "connexion";
+    include "layout.phtml";
 }
 
-echo json_encode(["result" => $result, 'message'=> $message]);

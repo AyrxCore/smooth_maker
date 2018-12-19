@@ -4,8 +4,11 @@ include "bdd.php";
 
 $requete = $bdd->prepare("
      SELECT * 
-     FROM product 
+     FROM recipe 
      ");
 
 $requete->execute();
 $user = $requete->fetchAll();
+
+$page = "recettes";
+include "layout.phtml";
