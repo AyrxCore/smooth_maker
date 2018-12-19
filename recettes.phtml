@@ -27,10 +27,12 @@
     </section>
 
     <section id="articles" class="row">
-        <?php foreach($user as $value): ?>
+        <?php foreach($recipe as $value): ?>
         <article class="col-sm-12 col-md-6 col-xl-4">
+        <a href="recipe.php?id=<?= $value['id'] ?>">
             <div style="background-image:url(<?= $value['imgSrcRecipe'] ?>)"></div>
             <h2><span><?= $value["recipeName"] ?></span></h2>
+            </a>
         </article>
         <?php endforeach; ?>
     </section>
