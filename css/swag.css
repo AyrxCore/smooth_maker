@@ -238,14 +238,14 @@ footer img{
     text-align: center;
 }
 #recettes .image{
-    background: url("../../img/photos/smooth-min.jpg");
+    background: url("../img/photos/smooth-min.jpg");
     background-size: cover;
     background-position: center center;
     height: 250px;
     flex: 1;
 }
 #recettes .imageSmoothie{
-    background: url("../../img/photos/jus-ananas-orange.jpg");
+    background: url("../img/photos/jus-ananas-orange.jpg");
     background-size: cover;
     background-position: center center;
     height: 250px;
