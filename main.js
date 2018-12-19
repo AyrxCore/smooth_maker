@@ -75,7 +75,19 @@ $(document).ready(function(){
     $(".fav").on('click', clickFav);
     function clickFav(){
         var id = $(".fav").data("fav");
-        
-        $(".fav").attr("src", "img/icons/fullheart.png");
+        if($(this).attr("src") == "img/icons/emptyheart.png"){
+            $(this).attr("src", "img/icons/fullheart.png");
+            $.ajax({
+                url: 'mesRecettes.php',
+                method: 'post',
+                dataType: 'json',
+                data: {id: id},
+                success: function(data){
+                    
+                }
+            });
+        }else{
+            $(this).attr("src", "img/icons/emptyheart.png");
+        }
     }
 });
