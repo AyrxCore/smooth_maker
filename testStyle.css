@@ -25,7 +25,8 @@ body
     display: flex;
     align-items: center;
     height: 250px;
- }
+    width: 85%;
+}
  #presentation h1{
     text-transform: uppercase;
     font-weight: bold;
@@ -34,8 +35,10 @@ body
 #presentation{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
- }
+}
+.localisation{
+    text-align:center; 
+}
  
  #presentation .image{
     background: url("img/photos/smooth.jpg");
@@ -86,6 +89,7 @@ body
     display: none;
     line-height: 6rem;
     color: white;
+    z-index:1;
 }
 
 /* RECIPE */
@@ -180,7 +184,7 @@ body
     border: 2px solid #62c97d;
     margin: -30px 20px 4px 25px;
     padding: 0 0 10px 20px;
-    width: 80%;
+
 
 }
 .titre h1{
@@ -193,10 +197,47 @@ body
     text-align: center;
 
 }
+#findUs .text {
+    text-align: center;
+}
+#findUs .titre{
+    border: 2px solid #62c97d;
+    margin: -30px 20px 4px 25px;
+    padding: 10px 0 10px 20px;
+    width: 100%;
+}
+#findUs .titre small{
+    font-size: 16px;
+}
+
+#findUs .titre h2{
+    font-size: 3rem;
+}
+#findUs{
+    padding: 15px;
+}
+#findUs .horaire {
+    border: 2px solid #62c97d;
+    margin: 15px auto;
+    padding: 10px 0 10px 0px;
+    width: 35%;
+}
+.navMobile li{
+    list-style:none;
+}
+.navMobile ul{
+    padding:0;
+}
+.navMobile li:hover{
+    background-color: rgba(178, 62, 79,0.8)
+}
+
 h2{
     font-weight: 800;
-    }
-
+}
+.frame{
+    display:none;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 700px)
 {
@@ -208,5 +249,24 @@ h2{
     {
         display: block;
     }
+    #findUs .coord{
+        margin: 0 auto;
+    }
+    #presentation .para{
+        font-size:14px;
+    }
 }
 
+@media screen and (min-width: 768px)
+{
+    #findUs .titre {
+        width: 87%;
+    }
+    #findUs .text {
+        text-align: left;
+    }
+    .frame{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
