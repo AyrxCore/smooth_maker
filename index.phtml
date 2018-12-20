@@ -15,27 +15,24 @@
 
 <body id="accueil">
 <header>
-    <section class="d-flex justify-content-around align-items-center">
+    <section class="d-flex justify-content-between">
         <a href="index.php"><img class='logo ml-auto p-2' src="img/logo/logoblanc.svg" alt="Logo SmoothMaker"></a>
-        <div>
+        <nav class="navDesktop d-flex justify-content-around mb-4">
+        <a class="text-white font-weight-bold text-uppercase" href="index.php">Accueil</a>
+        <a class="text-white font-weight-bold text-uppercase" href="smoothies.php">Smoothies</a>
+        <a class="text-white font-weight-bold text-uppercase" href="recettes.php">Recettes</a>
+        <a class="text-white font-weight-bold text-uppercase" href="lebar.php">Le bar</a>
+    </nav>
+    </section>
+    <div class="divIndex">
+    <div class="enferm">
             <p class="pitch">Fabriquant de smoothies artisanal</p>
             <a class="btn discover" href="smoothies.php">Decouvrir</a>
-            <?php $userSession = new UserSession();
-            if($userSession->isAuthenticated()): ?>
-            <p class="mt-5">Bonjour <strong><?= $userSession->getFullName() ?></strong> !</p>
-            <a class="btn discover" href="logout.php">Déconnexion</a> 
-            <?php else: ?>   
-            <a class="btn discover" href="connexion.php">Se connecter</a>   
-            <?php endif; ?>
         </div>
-    </section>
+            <img class="milkshakefraise" src="img/photos/milkshakefraise.png" alt="fraise">
+        </div>
 
-    <nav class="navDesktop d-flex justify-content-around mb-4">
-        <a class="text-white font-weight-bold text-uppercase mx-4" href="index.php">Accueil</a>
-        <a class="text-white font-weight-bold text-uppercase mx-4" href="smoothies.php">Smoothies</a>
-        <a class="text-white font-weight-bold text-uppercase mx-4" href="recettes.php">Recettes</a>
-        <a class="text-white font-weight-bold text-uppercase mx-4" href="lebar.php">Le bar</a>
-    </nav>
+        
 
     <!-- Menu mobile caché -->
     <section class="hideMenu">
@@ -49,7 +46,7 @@
     </section>
 </header>
 
-<main>
+<main id="index">
     <!-- Presentation -->
     <section id="presentation">
         <div class='titre'>
@@ -82,7 +79,7 @@
     </section>
     <!-- Nos Smoothies -->
     <section id="produits"  >
-        <h2>Nos Smoothies</h2>
+        <h2>Nos smoothies</h2>
         <hr>
         <section id="articles" class="row">
         <?php foreach($user as $value): ?>
@@ -122,7 +119,7 @@
     <section id="diy">
     <h2 class="">Découvrez les DIY smoothie</h2>
     <h4>Nos Smoothis, chez vous, par vous.</h4>
-    <div class="d-flex justify-content-between align-items-center my-4">
+    <div class="clement d-flex justify-content-between align-items-center my-4">
         <img class="hidePic" src="img/photos/fond rose.jpg" alt="Une main tenant un smoothie">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Nobis ratione deleniti iusto voluptatum sunt velit

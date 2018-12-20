@@ -1,4 +1,19 @@
-<main id="connexion">
+<main>
+    <div id="connexion">
     <div class="entete"></div>
     <h1 class="text-uppercase">Mes recettes</h1>
+</div>
+    <div id="recettes">
+    <section id="articles" class="row">
+        <?php foreach($myRecipes as $value): ?>
+        <article class="col-sm-12 col-md-6 col-xl-4">
+            <div style="background-image:url(<?= $value['imgSrcRecipe'] ?>)">
+            </div>
+            <a href="recipe.php?id=<?= $value['idRecipe'] ?>">
+            <h2><span><?= $value["recipeName"] ?></span></h2>
+            </a>
+        </article>
+        <?php endforeach; ?>
+    </section>
+</div>
 </main>

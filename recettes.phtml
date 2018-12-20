@@ -27,10 +27,14 @@
     </section>
 
     <section id="articles" class="row">
-        <?php foreach($recipe as $value): ?>
+        <?php foreach($myRecipe as $value): ?>
         <article class="col-sm-12 col-md-6 col-xl-4">
             <div style="background-image:url(<?= $value['imgSrcRecipe'] ?>)">
-                <img class="fav" src="img/icons/emptyheart.png" alt="heart" data-fav=<?= $value['id'] ?>>
+            <?php if($value["InFavorite"] == "true") {
+                echo " <img class='fav' src='img/icons/fullheart.png' alt='heart' data-fav='".$value['id']."'>" ;
+                } else {
+                echo " <img class='fav' src='img/icons/emptyheart.png' alt='heart' data-fav='".$value['id']."'>" ;
+                } ?>
             </div>
             <a href="recipe.php?id=<?= $value['id'] ?>">
             <h2><span><?= $value["recipeName"] ?></span></h2>

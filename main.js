@@ -73,20 +73,34 @@ $(document).ready(function(){
 
     $(".fav").on('click', clickFav);
     function clickFav(){
-        var id = $(".fav").data("fav");
+        var id = $(this).data("fav");
         if($(this).attr("src") == "img/icons/emptyheart.png"){
-            $(this).attr("src", "img/icons/fullheart.png");
+
             $.ajax({
-                url: 'mesRecettes.php',
+                url: 'recettes.php',
                 method: 'post',
                 dataType: 'json',
-                data: {id: id},
+                data: {id: id, action: "add"},
                 success: function(data){
-                    
-                }
+                    if(data.result == true){
+                        $(this).attr("src", "img/icons/fullheart.png");
+                    } else if (data.result == false && data.redirect == true){
+                        window.location = "connexion.php"
+                    }
+                }.bind(this)
             });
         }else{
-            $(this).attr("src", "img/icons/emptyheart.png");
+            $.ajax({
+                url: 'recettes.php',
+                method: 'post',
+                dataType: 'json',
+                data: {id: id, action: "remove"},
+                success: function(data){
+                    if(data.result == true){
+                        $(this).attr("src", "img/icons/emptyheart.png");
+                    }
+                }.bind(this)
+            });
         }
     }
 });
