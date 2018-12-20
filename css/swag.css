@@ -1,6 +1,6 @@
 /* INDEX.PHP */
         /*-- header --*/
-#accueil  .btn{
+.btn{
     padding:10px;
     border-radius:20px;
     border: 1px solid;
@@ -177,7 +177,19 @@
 #accueil #produits h2 {
     text-align: center;
 }
+#produits #articles article a h2 span{
+    text-align: center;
+    color:black;
+}
 
+#produits #articles article a:hover h2 span{
+    text-align: center;
+    color:#F26079;
+    text-decoration: none
+}
+#produits #articles article a:hover{
+    text-decoration: none
+}
 #accueil #produits #articles h2{
     text-align: center;
     font-size: 1.5rem;
@@ -299,6 +311,7 @@ footer img{
 #recettes #articles article{
     text-align: center;
 }
+
 #recettes h2{
     font-size: 1.5rem;
     font-weight: bold;
@@ -403,6 +416,24 @@ body
     justify-content: space-between;
     align-items: center;
 }
+#layout header div.bonjour
+{
+    width: 25%;
+    font-size: 1.7rem;
+}
+#layout header div.bonjour a{
+    width: 100%;
+    margin: 0 auto;
+    border-color: #F26079;
+    color: #F26079;
+}
+#layout header div.bonjour a:hover{
+    width: 100%;
+    margin: 0 auto;
+    border-color: #F26079;
+    background-color:#F26079;
+    color: #F2EDE6
+}
 #layout header section
 {
     display: none;
@@ -413,7 +444,7 @@ body
     width: 20rem;
 }
 #layout header .navMobile
-{
+{   
     background:rgba(242, 98, 121, 0.8);
     position: absolute;
     left: 7.5%;
@@ -432,6 +463,8 @@ body
 {
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 #recipe h1
 {
@@ -537,11 +570,11 @@ body
     border-radius: 15rem;
     height: 4rem;
     width: 70%;
+    padding-left: 2rem;
 }
 #connexion form input[type="text"]::placeholder, #connexion form input[type="password"]::placeholder
 {
     color: rgb(242, 98, 121);
-    padding-left: 2rem;
 }
 
 /* BUTTON */
@@ -553,6 +586,7 @@ body
     border: none;
     color: white;
     text-decoration: none;
+
 }
 
 /* FOOTER */
@@ -672,5 +706,14 @@ h2{
     }
     #presentation .para{
         font-size:14px;
+    }
+}
+@media screen and (min-width:1024px){
+    
+    #recipe img{
+        width: 40%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 }

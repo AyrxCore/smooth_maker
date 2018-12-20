@@ -17,7 +17,7 @@
         <a href="index.php"><img src="img/logo/logo.png" alt="Logo SmoothMaker"></a>
         <?php $userSession = new UserSession();
         if($userSession->isAuthenticated()): ?>
-        <div class="d-flex flex-column">
+        <div class="bonjour d-flex flex-column">
             <p class="ml-5">Bonjour <strong><?= $userSession->getFullName() ?></strong> !</p>
             <a class="btn discover" href="logout.php">Déconnexion</a>  
         </div>
