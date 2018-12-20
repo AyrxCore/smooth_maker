@@ -19,7 +19,13 @@
     text-align: center;
    
 }
-#accueil header section
+.logo
+{
+    width: 250px;
+    height: 250px;
+    margin: 0
+}
+#accueil header .hideMenu
 {
     display: none;
     cursor: pointer;
@@ -29,7 +35,7 @@
     background:rgba(242, 98, 121, 0.8);
     position: absolute;
     left: 7.5%;
-    top: 19.7%;
+    top: 42.05%;
     width: 85%;
     display: flex;
     justify-content: center;
@@ -79,6 +85,7 @@
 #accueil nav a:hover{
     text-decoration:none;
     color:white;
+    animation: bounce 0.7s ease infinite;
 }
 #accueil nav a:before {
     content: "";
@@ -92,18 +99,18 @@
     transition: all 0.2s ease-in-out 0s;
     transform: scaleX(0);
 }
-#accueil nav a:hover:before {
+#accueil nav a:hover::before {
 
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-    font-weight: bold;
+    font-weight: bold; 
 }
         /*-- main --*/
 .titre{
     border: 2px solid #62c97d;
     margin: -30px 20px 4px 25px;
-    padding: 0 0 10px 20px;
+    padding: 25px 0 10px 20px;
     width: 80%;
 
 }
@@ -311,8 +318,9 @@ body
     font-family: 'Montserrat', sans-serif;
     width: 85%;
 }
-#presentation img{
-    width: 100%;
+.hidePic{
+    width: 50%;
+    max-width: 400px;
  }
  #presentation .Grostitre{
     border: solid #F26079 3px;
@@ -379,7 +387,7 @@ body
     background:rgba(242, 98, 121, 0.8);
     position: absolute;
     left: 7.5%;
-    top: 19.7%;
+    top: 19%;
     width: 85%;
     display: flex;
     justify-content: center;
@@ -503,6 +511,7 @@ body
 #connexion form input[type="text"]::placeholder, #connexion form input[type="password"]::placeholder
 {
     color: rgb(242, 98, 121);
+    padding-left: 2rem;
 }
 
 /* BUTTON */
@@ -595,12 +604,6 @@ h2{
     #produit article {
         margin: 0 auto;
     }
-    .logo{
-        width: 250px;
-        height: 250px;
-        margin: 0
-    }
-
     #produits article h3:nth-child(odd),
     #produits  article h3:nth-child(even){
         margin : -15px 0 4px 1rem;
@@ -612,12 +615,15 @@ h2{
 {
      header .navDesktop
     {
-        display: none;
+        display: none!important;
     }
-     header section
+     header .hideMenu
     {
-        display: block;
+        display: block!important;
     }
+    .hidePic{
+        display: none;
+     }
      header section p
     {
         display: block;

@@ -20,8 +20,15 @@ if($_POST)
         $result = false;
     }else{
         $result = true;
+        $newSession = new UserSession();
+        $newSession->create(
+            $user["id"],
+            $user["firstName"],
+            $user["lastName"],
+            $user["email"]
+        );
     }
-    echo json_encode(["result" => $result, $user]);
+    echo json_encode(["result" => $result]);
 }
 else
 {

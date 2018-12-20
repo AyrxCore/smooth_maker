@@ -29,9 +29,8 @@ $(document).ready(function(){
                     dataType: 'json',
                     data: {email: email, mdp: mdp},
                     success: function(data){
-                        console.log(data);
                         if(data.result == true){
-                            // window.location.href = "mesRecettes.php";
+                            window.location.href = "mesRecettes.php";
                         }else{
                             $(".failed").html("<div class='alert alert-danger' role='alert'>Utilisateur inconnu !</div>") 
                         }

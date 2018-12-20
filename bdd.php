@@ -1,5 +1,7 @@
 <?php
 
+include "UserSession.class.php";
+
 $bdd = new PDO
 (
     'mysql:host=localhost;dbname=smooth_maker;charset=UTF8',
