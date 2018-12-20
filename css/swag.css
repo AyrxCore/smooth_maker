@@ -271,7 +271,7 @@ footer img{
 #recettes #articles article{
     text-align: center;
 }
-#recettes h2{
+#recettes article h2{
     font-size: 1.5rem;
     font-weight: bold;
     border: solid #F26079;
