@@ -81,37 +81,42 @@
         </article>
     </section>
     <!-- Nos Smoothies -->
-    <section id="produits" >
-
+    <section id="produits"  >
         <h2>Nos Smoothies</h2>
         <hr>
+        <section id="articles" class="row">
+        <?php foreach($user as $value): ?>
+        <article class="col-sm-12 col-md-6 col-xl-4">
+            <div style="background-image:url(<?= $value['imgSrc'] ?>)">
+            </div>
+            <a href="recipe.php?id=<?= $value['id'] ?>">
+            <h2><span><?= $value["productName"] ?></span></h2>
+            </a>
+        </article>
+        <?php endforeach; ?>
+    </section>
 
-    <?php foreach($user as $key => $value): ?>
-    <?php  if($key < 6): ?>
-    <article class="col-sm-12 col-md-6 col-xl-4">
-        <div style="background-image:url(<?= $value['imgSrc'] ?>)"></div>
-        <h2><span><?= $value["productName"] ?></span></h2>
-    </article>
-    <?php endif; ?>
-    <?php endforeach; ?>
 
     </section>
     <!-- Nous trouvez -->
-    <section id="findUs">
-    <div class='titre'>
-    <h2>Nous trouver</h2>
-    <small>venez boire un coup smooth détente</small>
-    </div>
-    <div class="text">
-        <p class="localisation"><i class="fas fa-map-maker-alt"></i> 25, rue République</p>
-        <p class="localisation">69002 Lyon</p>
-        <p class="localisation"> <i class="fas fa-phone"></i> 04 78 02 03</p>
-        <p class="localisation"><i class="fas fa-envelope"></i> smooth@maker.fr</p>
-    </div>
-    <div class="frame">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32414.124936276312!2d4.809459813325323!3d45.76178845286803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea56197f0eb3%3A0x6618930dd84dbfdc!2s25+Rue+de+la+R%C3%A9publique%2C+69002+Lyon!5e0!3m2!1sfr!2sfr!4v1545043069363" width="99%"  frameborder="0" allowfullscreen></iframe>
-    </div>
-    </section>
+    <section id="findUs" class="d-flex row">
+        <div class="coord col-12 col-md-6 w-50">
+                <div class='titre '>
+                        <h2>Nous trouver</h2>
+                        <small>venez boire un coup smooth détente</small>
+                    </div>
+                    <div class="text">
+                        <p class="localisation"><i class="fas fa-map-maker-alt"></i>25, rue République</p>
+                        <p class="localisation">69002 Lyon</p>
+                        <p class="localisation"> <i class="fas fa-phone"></i> 04 78 02 03</p>
+                        <p class="localisation"><i class="fas fa-envelope"></i> smooth@maker.fr</p>
+                    </div> 
+
+                
+        </div>
+                <div class="frame col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32414.124936276312!2d4.809459813325323!3d45.76178845286803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea56197f0eb3%3A0x6618930dd84dbfdc!2s25+Rue+de+la+R%C3%A9publique%2C+69002+Lyon!5e0!3m2!1sfr!2sfr!4v1545043069363" width="100%"  frameborder="0" allowfullscreen></iframe>
+                </div>
 
     <!-- Découvez nos smoothies DIY -->
     <section id="diy">
