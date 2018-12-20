@@ -1,6 +1,6 @@
 /* INDEX.PHP */
         /*-- header --*/
-.btn{
+#accueil  .btn{
     padding:10px;
     border-radius:20px;
     border: 1px solid;
@@ -19,7 +19,7 @@
     text-align: center;
    
 }
-.logo
+#accueil .logo
 {
     width: 250px;
     height: 250px;
@@ -107,31 +107,31 @@
     font-weight: bold; 
 }
         /*-- main --*/
-.titre{
+        #accueil .titre{
     border: 2px solid #62c97d;
     margin: -30px 20px 4px 25px;
     padding: 25px 0 10px 20px;
     width: 80%;
 
 }
-.titre h1{
+#accueil .titre h1{
     font-weight: 800;
     margin: 0;
     padding-top:1.5rem;
 }
-.titre small{
+#accueil .titre small{
     font-family: "Nixie One", cursive;
     text-align: center;
 
 }
 
-.container{
+#accueil.container{
     margin: 0 auto;
 }
-.right{
+#accueil .right{
     text-align: right;
 }
-.d{
+#accueil .d{
     text-align: center;
     border-bottom: 4px solid #62c97d;
     width: 45%;
@@ -139,50 +139,78 @@
     margin: 0 auto;
 
 }
-article{
+#accueil article{
     margin: 45px 0;
 }
-article img{
+#accueil article img{
     width: 100%;
 }
-article h3{
+#accueil article h3{
     position: absolute;
     border: 2px solid #F26079;
     padding: 15px;
     color: black;
 }
-article:nth-child(even) h3{
+#accueil article:nth-child(even) h3{
     margin: -16px 0 17px 19rem;
 
 }
-article:nth-child(odd) h3{
+#accueil article:nth-child(odd) h3{
     margin: -15px 0 4px 1rem;
 }
-.recipe{
+#accueil .recipe{
     text-align:center; 
     border-color:#F26079;
     color:#F26079;
     font-size: 14px;
 }
-.recipe:hover{
+#accueil .recipe:hover{
     background:#F26079;
     color:white;
 }
-#produits h2{
+#accueil #produits article div{
+    width: 100%;
+    height: 16rem;
+    background-size: cover;
+    position: relative;
+}
+#accueil #produits h2 {
     text-align: center;
 }
-hr{
+
+#accueil #produits #articles h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: solid #F26079;
+    padding: 1rem 2rem 0;
+    margin: -1rem auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 40%;
+
+}
+#accueil #produits div article div{
+    margin: -17px 0px 0 20px;
+    width: 44%;
+    height: 23%;
+    padding: 19px 20px 0px 0px;
+    border-color: #F26079;
+}
+#accueil hr{
     width: 10%;
     size: 2;
     border:2px solid #62c97d;
 }
-h2{
+#accueil h2{
 font-weight: 800;
 }
-#diy {
+#accueil #diy {
     text-align: center;
 }
-section{
+#accueil section{
     margin-bottom:55px;
 }
         /* footer */
@@ -289,6 +317,7 @@ footer img{
     background-size: cover;
     position: relative;
 }
+
 #recettes #articles .fav{
     width: 30px;
     position: absolute;
@@ -317,6 +346,7 @@ body
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     width: 85%;
+    background: #F2EDE6;
 }
 .hidePic{
     width: 50%;
@@ -434,7 +464,7 @@ body
 }
 #recipe .ingredient span
 {
-    background: white;
+    background: #F2EDE6;
     padding: 0 1rem;
     margin-left: 1rem;
     color: green;
